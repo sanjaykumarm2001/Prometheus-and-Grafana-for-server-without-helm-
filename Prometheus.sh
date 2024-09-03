@@ -75,3 +75,5 @@ sudo systemctl enable prometheus
 
 # Check the status of Prometheus service
 sudo systemctl status prometheus
+
+
