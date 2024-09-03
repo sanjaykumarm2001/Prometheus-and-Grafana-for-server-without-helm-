@@ -1,0 +1,10 @@
+# For integrating Node Exporter with Prometheus 
+
+sudo nano /etc/prometheus/prometheus.yml
+
+- job_name: "myserver"
+    static_configs:
+    # - targets: ["<IP_ADDRESS>:9100"]
+      - targets: ["localhost:9100"]
+
+  sudo systemctl restart prometheus
